@@ -1,11 +1,18 @@
+import Heading from "../components/Heading";
+import Content from "../components/Content";
+
+
 export default function Home() {
+
+  let Lunch_items = ["Beef stew", "Steak", "Chicken Curry", "Grilled chicken"]
+  let breakfast_items = ["coffee","latte","tea"]
+
+
   return (
     <div>
-      <h1><strong>WELCOME TO AMALA FOODS</strong></h1>
-      <p>This is a nice website</p>
-      <p>Make your orders today!</p>
-      <h2>MEET CHEF HAVY</h2>
-      <p>Our main baker from Harvard Culinary School</p>
+      <Heading />
+      <Content tittle="Breakfast" items={breakfast_items} />
+      <Content tittle="Lunch/dinner"items={Lunch_items} />
     </div>
   )
 }
