@@ -13,6 +13,7 @@ export default function Home() {
       <Heading />
       <Content tittle="Breakfast" items={breakfast_items} />
       <Content tittle="Lunch/dinner"items={Lunch_items} />
+      <h2>MEET OUR CHEF HAVY</h2>
     </div>
   )
 }
